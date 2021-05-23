@@ -6,13 +6,16 @@ import {useHistory} from 'react-router-dom'
 
 function AddRecord() {
     const history=useHistory()
-    
+
     const submitHandler=async(e,data)=>{
         e.preventDefault()
        const {first_name,last_name,email,city,state,pincode}=data
-        if(pincode.length!==5){
+       var mailformat = /^[A-Z0-9_'%=+!`#~$*?^{}&|-]+([\.][A-Z0-9_'%=+!`#~$*?^{}&|-]+)*@[A-Z0-9-]+(\.[A-Z0-9-]+)+$/i
+        if(!email.match(mailformat)){
+            return alert(`wrong Email format ${email}`)
+        }else if(pincode.length!==5){
             const enteredPincode=pincode.length
-            alert(`pincode length mustbe 5 and you have entered ${enteredPincode} `)
+           return alert(`pincode length mustbe 5 and you have entered ${enteredPincode} `)
         }else{
           try{
                 const response=await axios.get('https://c0ri699qs5.execute-api.us-east-1.amazonaws.com/v1/add', 

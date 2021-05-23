@@ -18,7 +18,7 @@ function CustomForm({submitHandler,isEdit,record,BtnName}) {
                 return ''
             }else{
                 const {first_name,last_name,email,states,city,pincode}=record
-               
+               console.log(record)
                 setFirstName(first_name)
                 setLastName(last_name)
                 setEmail(email)
@@ -42,7 +42,7 @@ function CustomForm({submitHandler,isEdit,record,BtnName}) {
             </div>
             <div className="formGroup">
                 <label>email</label>
-                <input type="email" className={isEdit==="true"&&"active"} value={email} onChange={isEdit==="false"?(e)=>setEmail(e.target.value):{}} pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required />
+                <input type="email" className={isEdit==="true"&&"active"} value={email} onChange={isEdit==="false"?(e)=>setEmail(e.target.value):{}} required />
             </div>
             <div className="formGroup">
                 <label>state</label>
