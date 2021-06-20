@@ -1,0 +1,39 @@
+.table{
+   width: 100%;
+   padding: 10px 30px;
+   position: relative;
+}
+.table .custom_table{
+    box-shadow: 0 0 10px silver;
+}
+.table .custom_table_head{
+    background: #5663e1;
+    color: #ffffff;
+    font-weight: none;
+}
+.table .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.table .buttons .anchor{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: row;
+    width: 100%;
+    text-transform: uppercase;
+    background: #558fc9;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 15px;
+    border:none;
+    outline: none;
+}
+.table .buttons .anchor:nth-child(even){
+    background: #c95555;
+    
+}

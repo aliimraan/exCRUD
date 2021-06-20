@@ -1,0 +1,90 @@
+.customForm{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    flex-direction: column;
+}
+.customForm form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 60px;
+    min-height: 100vh;
+    height: auto;
+    flex-direction: column;
+}
+.customForm form .formArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    gap: 20px;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+}
+.customForm form .formArea .formGroup{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    flex-direction: column;
+   
+}
+.customForm form .formArea .formGroup label{
+   font-size: 0.9rem;
+   text-transform: capitalize;
+   font-weight: 700;
+   color: #5663e1;
+   
+}
+.customForm form .formArea .formGroup input
+{
+   padding: 5px 2px;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   border: 0.5px solid #b7b7b7;
+   color:#999999;
+   
+}
+.customForm form .formArea .formGroup .active
+{
+   background: #d2d2d2;
+   color: #999999;
+   cursor: not-allowed;
+}
+
+.customForm form .formArea .formGroup select
+{
+   padding: 5px 40px;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   width: 100%;
+   border: 0.5px solid #b7b7b7;
+   
+}
+.customForm form .buttonArea{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 45%;
+  gap: 10px;
+}
+.customForm form .buttonArea button{
+  border: none;
+  outline: none;
+  padding: 0px 20px;
+  border-radius: 15px;
+  background:  #5663e1;
+  color:white;
+  text-transform: capitalize;
+}
+.customForm form .buttonArea button:nth-child(even){
+  background: #bea6a6;
+}
